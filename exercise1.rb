@@ -15,14 +15,16 @@ input_drama = gets.chomp
 puts "Do you enjoy comedies (yes/no)"
 input_comedy = gets.chomp
 
-if input_documentary == "yes" && input_drama == "no" && input_comedy == "no"
+if input_documentary.downcase == "yes" && input_drama.downcase == "no" && input_comedy.downcase == "no"
   puts "You should watch #{documentary}."
-elsif input_documentary == "no" && input_drama == "yes" && input_comedy == "yes"
+elsif input_documentary.downcase == "no" && input_drama.downcase == "yes" && input_comedy.downcase == "yes"
   puts "You should watch #{dramedy}."
-elsif input_documentary == "no" && input_drama == "yes" && input_comedy == "no"
+elsif input_documentary.downcase == "no" && input_drama.downcase == "yes" && input_comedy.downcase == "no"
   puts "You should watch #{drama}."
-elsif input_documentary == "no" && input_drama == "no" && input_comedy == "yes"
+elsif input_documentary.downcase == "no" && input_drama.downcase == "no" && input_comedy.downcase == "yes"
   puts "You should watch #{comedy}."
-elsif input_documentary == "no" && input_drama == "no" && input_comedy == "no"
+elsif input_documentary.downcase == "no" && input_drama.downcase == "no" && input_comedy.downcase == "no"
   puts "You should read #{book} instead."
+elsif
+  puts "looks like something went wrong"
 end
